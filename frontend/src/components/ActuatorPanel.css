@@ -1,0 +1,152 @@
+.actuator-panel-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.actuator-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.actuator-panel-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.actuator-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #64748b;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.actuator-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.actuator-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.actuator-item.glow-recommended {
+  border-color: #fde047;
+  background-color: #fefce8;
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2);
+}
+
+.actuator-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actuator-icon {
+  font-size: 1.2rem;
+}
+
+.actuator-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.actuator-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.actuator-rec-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #b45309;
+  margin-top: 2px;
+}
+
+.actuator-switch-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actuator-toggle-btn {
+  width: 40px;
+  height: 20px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+  padding: 2px;
+}
+
+.actuator-toggle-btn.off {
+  background-color: #cbd5e1;
+}
+
+.actuator-toggle-btn.on {
+  background-color: #2563eb;
+}
+
+.actuator-slider {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.actuator-toggle-btn.on .actuator-slider {
+  transform: translateX(20px);
+}
+
+.actuator-state-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 28px;
+}
+
+.state-on {
+  color: #2563eb;
+}
+
+.state-off {
+  color: #94a3b8;
+}
+
+.actuator-footer {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.actuator-footer p {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.3;
+}
